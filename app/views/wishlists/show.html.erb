@@ -1,0 +1,13 @@
+<h2><%= @wishlist.name %></h2>
+<p><%= @wishlist.description %></p>
+<%console%>
+<div>
+<% @wishlist.items.each do |item| %>
+<p><%= item.name %></p>
+<% end %>
+</div>
+
+<% if user_signed_in? && current_user == @wishlist.user %>
+<%= link_to 'Edit', "/wishlists/#{@wishlist.id}/edit" %> 
+<%= link_to 'Delete', "/wishlists/#{@wishlist.id}", method: "delete" %> 
+<% end %>

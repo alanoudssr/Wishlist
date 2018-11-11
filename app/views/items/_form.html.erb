@@ -1,0 +1,40 @@
+
+ <%= form_for @item do |f| %>
+  <div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
+    <div>
+  <%= f.label :link %>
+  <%= f.url_field :link %>
+  </div>
+
+   <div>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  </div>
+
+   <div>
+  <%= f.label :price %>
+  <%= f.number_field :price, step: 0.01, min: 0 %>
+  </div>
+
+  <div>
+    <%= f.label :wishlist_ids %>
+    <%= f.collection_select :wishlist_ids, Wishlist.all, :id, :name %>
+  </div> 
+
+   <div>
+     <%= f.radio_button :rating, 1 %>
+  <%= label :rating1, '1' %>
+  <%= f.radio_button :rating, 2 %>
+  <%= label :rating2, '2' %>
+  <%= f.radio_button :rating, 3 %>
+  <%= label :rating3, '3' %>
+  <%= f.radio_button :rating, 4 %>
+  <%= label :rating4, '4' %>
+  <%= f.radio_button :rating, 5 %>
+  <%= label :rating5, '5' %>
+  </div>
+  <%= f.submit %>
+<% end %> 

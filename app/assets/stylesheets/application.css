@@ -13,3 +13,127 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css?family=El+Messiri|Kumar+One+Outline|Lobster');
+
+body {
+    margin: 0;
+}
+
+ .left {
+     margin-left: 10vw;
+ }
+
+ .up-left {
+     margin-left: 30vw;
+
+ }
+
+ .left:nth-child(1) {
+     margin-left: 1vw; 
+ }
+
+ .right {
+     margin-left: 25vw; 
+     margin-right: 5vw;
+ } 
+
+ .nav-wrapper {
+     font-family: 'El Messiri', sans-serif;
+     height: 70px;
+     line-height: 70px;
+     background-color: #dba3f5;
+     box-shadow: 1px 1px 2px 2px rgb(131, 131, 131);
+     margin-bottom: 2px;
+ }
+
+ .nav-wrapper>span a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     padding: 1em;
+ }
+
+.nav-wrapper>span a:hover {
+color: rgb(128, 2, 160) ;
+box-shadow: 0px 0px 4px 2px rgb(128, 2, 160) ;
+}
+
+.nav-wrapper>span:last-child a:hover {
+box-shadow: 0px 0px 4px 2px rgb(128, 2, 160) inset;
+}
+
+.collection {
+    text-align: center;
+}
+
+.wishlist {
+    display: block;
+    margin: 2em;
+    border: 1px dotted #dba3f5;
+    padding: 1em;
+    color: rgb(95, 222, 253);
+}
+
+.wishlist:hover {
+background-color: #dba3f5;
+}
+
+.card {
+box-shadow: 1px 1px 1px 1px grey;
+padding: 1em;
+margin: 1em;
+display: inline-block;
+float: left;
+width: 24vw;
+height: 40vh;
+}
+
+.card-img {
+    width: 14em;
+    height: 14em;
+    float: left;
+}
+
+.card-content {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.home-cover {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.home-sign {
+    position: relative;
+font-family: 'Kumar One Outline', cursive;
+z-index: 2;
+}
+
+.home-sign > span > a {
+text-decoration: none;
+font-size: 3em;
+    display: block;
+}
+
+.home-sign > span > a:hover {
+text-decoration: none;
+color: white;
+font-size: 3em;
+}
+
+.home-sign1 > a{
+    color: rgb(127, 240, 255);
+    position: absolute;
+    top: 5em;
+    left: 5em;
+}
+
+.home-sign2 > a{
+    color: #dba3f5;
+    position: absolute;
+    top: 9em;
+    left: 9em;
+}

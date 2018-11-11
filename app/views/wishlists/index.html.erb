@@ -1,0 +1,9 @@
+<div class="collection">
+
+<% @wishlists.each do |w| %>
+
+<a class="wishlist" href="<%=wishlist_path(w)%>"><%=w.name%></a>
+
+<% end %>
+
+</div>

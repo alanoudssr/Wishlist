@@ -1,0 +1,5 @@
+<% if @wishlist.user == current_user  %>
+<%= render partial: 'form' %>
+<% else %>
+<p>Sorry, you're not authorized to edit this list</p>
+<% end  %>

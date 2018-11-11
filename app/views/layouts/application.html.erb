@@ -10,6 +10,19 @@
   </head>
 
   <body>
+ 
+ <div class="nav-wrapper">
+<% if user_signed_in? %>
+<span class="left"><%= link_to 'All Wishlists', wishlists_path %></span>
+<span class="left"><%= link_to 'New Wishlists', new_wishlist_path %></span>
+<span class="left"><%= link_to 'All Items', items_path %></span>
+<span class="left"><%= link_to 'New Item', new_item_path %></span>
+<span class="right"><%= link_to 'Log Out', destroy_user_session_path, method: 'delete' %>
+<% else %>
+ <span class="up-left"><%= link_to 'Sign Up', new_user_registration_path %></span>
+<span class="right"><%= link_to 'Login', new_user_session_path %></span>
+<% end %>
+</div>
     <%= yield %>
   </body>
 </html>
