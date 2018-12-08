@@ -1,4 +1,4 @@
 class Item < ApplicationRecord
-    has_and_belongs_to_many :wishlists
-    belongs_to :user
+  has_and_belongs_to_many :wishlists
+  belongs_to :user
 end
